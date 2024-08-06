@@ -31,11 +31,9 @@ const displayText = document.getElementById(
   "displayText"
 ) as HTMLParagraphElement;
 
-if (displayButton && resetButton && inputField && colorSelect && displayText) {
-  displayButton.addEventListener("click", () =>
-    displayInputValue(inputField, displayText, colorSelect)
-  );
-  resetButton.addEventListener("click", () =>
-    resetInput(inputField, displayText)
-  );
-}
+displayButton?.addEventListener("click", () =>
+  displayInputValue(inputField, displayText, colorSelect)
+);
+resetButton?.addEventListener("click", () =>
+  resetInput(inputField, displayText)
+);
